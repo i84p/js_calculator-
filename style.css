@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    background-color: #000;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 380px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+
+.result {
+    background-color: #000;
+    padding: 30px 24px 10px;
+    text-align: left;
+    min-height: 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.result p {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+
+.Keyboard {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    padding: 12px 16px 20px;
+    gap: 12px;
+}
+
+.opration {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.opration button {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: opacity 0.1s ease;
+}
+
+
+.opration button:last-child {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+
+.opration button:not(:last-child) {
+    background-color: #ff9f0a;
+    color: #fff;
+}
+
+.opration button:active {
+    opacity: 0.7;
+}
+
+
+.nums {
+    display: grid;
+    grid-template-columns: repeat(3, 76px);
+    gap: 12px;
+}
+
+.nums button {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333335;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: opacity 0.1s ease;
+}
