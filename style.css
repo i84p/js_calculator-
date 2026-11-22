@@ -23,16 +23,19 @@ body {
 
 
 .result {
-    background-color: #000;
+    background-color: #0d0d0d;
     padding: 30px 24px 10px;
-    text-align: left;
     min-height: 130px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.result p {
+.result input {
+    text-align: left;
+    width: 100%;
+    background-color: #0d0d0d;
+    border: none;
     color: #fff;
     font-size: 72px;
     font-weight: 300;
